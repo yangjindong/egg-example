@@ -1,7 +1,8 @@
 <h3>编辑</h3>
 
-<form action="/pets/1" method="patch">
+<form action="/pets/1" method="post">
   <ul>
+    <input type="hidden" name="_method" value="patch" />
     <li>名称: <input type="text" name="title" value="小猫" /></li>
     <li><input type="submit" value="提交" class="btn btn-default"></li>
   </ul>
